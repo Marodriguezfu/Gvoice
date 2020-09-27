@@ -7,4 +7,5 @@ std::string saludo(int a){
         a--;
     }
     std::cout << "HOLA AMIGO MIO" << std::endl;
+    return "";
 }
