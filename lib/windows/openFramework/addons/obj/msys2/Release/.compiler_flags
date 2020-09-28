@@ -1,0 +1,1 @@
+-Os -DNDEBUG -std=gnu++14 -DUNICODE -D_UNICODE -Wall -fexceptions -march=native -mtune=native -DOF_SOUND_PLAYER_OPENAL -DOF_USING_MPG123

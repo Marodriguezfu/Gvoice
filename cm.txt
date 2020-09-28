@@ -1,0 +1,722 @@
+Compiling /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/examples/gui/guiExample/src/main.cpp
+/mingw64/bin/g++
+-c -Os -DNDEBUG -std=gnu++14 -DUNICODE -D_UNICODE -Wall -fexceptions -march=native -mtune=native -DOF_SOUND_PLAYER_OPENAL -DOF_USING_MPG123  -mms-bitfields
+-IC:/msys64/mingw64/include/cairo
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/pixman-1
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/freetype2
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/harfbuzz
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/glib-2.0
+-IC:/msys64/mingw64/lib/glib-2.0/include
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/libpng16
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/AL
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/opus
+-IC:/msys64/mingw64/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/detail
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/ext
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtc
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtx
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/simd
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/json/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/kiss/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/pugixml/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/rtAudio/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/tess2/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include/uriparser
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include/utf8
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/videoInput/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/3d
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/app
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/communication
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/events
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/gl
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/graphics
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/math
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/sound
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/types
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/utils
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/video
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/examples/gui/guiExample/src
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src
+-MMD -MP -MF obj/msys2/Release/src/main.d
+-MT obj/msys2/Release/src/main.o
+ -o obj/msys2/Release/src/main.o
+-c /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/examples/gui/guiExample/src/main.cpp
+
+Compiling /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/examples/gui/guiExample/src/ofApp.cpp
+/mingw64/bin/g++
+-c -Os -DNDEBUG -std=gnu++14 -DUNICODE -D_UNICODE -Wall -fexceptions -march=native -mtune=native -DOF_SOUND_PLAYER_OPENAL -DOF_USING_MPG123  -mms-bitfields
+-IC:/msys64/mingw64/include/cairo
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/pixman-1
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/freetype2
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/harfbuzz
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/glib-2.0
+-IC:/msys64/mingw64/lib/glib-2.0/include
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/libpng16
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/AL
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/opus
+-IC:/msys64/mingw64/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/detail
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/ext
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtc
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtx
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/simd
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/json/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/kiss/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/pugixml/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/rtAudio/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/tess2/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include/uriparser
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include/utf8
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/videoInput/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/3d
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/app
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/communication
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/events
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/gl
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/graphics
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/math
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/sound
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/types
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/utils
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/video
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/examples/gui/guiExample/src
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src
+-MMD -MP -MF obj/msys2/Release/src/ofApp.d
+-MT obj/msys2/Release/src/ofApp.o
+ -o obj/msys2/Release/src/ofApp.o
+-c /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/examples/gui/guiExample/src/ofApp.cpp
+
+Compiling /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxBaseGui.cpp
+/mingw64/bin/g++
+-c -Os -DNDEBUG -std=gnu++14 -DUNICODE -D_UNICODE -Wall -fexceptions -march=native -mtune=native -DOF_SOUND_PLAYER_OPENAL -DOF_USING_MPG123  -mms-bitfields
+-IC:/msys64/mingw64/include/cairo
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/pixman-1
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/freetype2
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/harfbuzz
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/glib-2.0
+-IC:/msys64/mingw64/lib/glib-2.0/include
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/libpng16
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/AL
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/opus
+-IC:/msys64/mingw64/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/detail
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/ext
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtc
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtx
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/simd
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/json/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/kiss/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/pugixml/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/rtAudio/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/tess2/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include/uriparser
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include/utf8
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/videoInput/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/3d
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/app
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/communication
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/events
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/gl
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/graphics
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/math
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/sound
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/types
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/utils
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/video
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src
+-MMD -MP -MF /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxBaseGui.d
+-MT /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxBaseGui.o
+ -o /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxBaseGui.o
+-c /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxBaseGui.cpp
+
+Compiling /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxButton.cpp
+/mingw64/bin/g++
+-c -Os -DNDEBUG -std=gnu++14 -DUNICODE -D_UNICODE -Wall -fexceptions -march=native -mtune=native -DOF_SOUND_PLAYER_OPENAL -DOF_USING_MPG123  -mms-bitfields
+-IC:/msys64/mingw64/include/cairo
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/pixman-1
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/freetype2
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/harfbuzz
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/glib-2.0
+-IC:/msys64/mingw64/lib/glib-2.0/include
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/libpng16
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/AL
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/opus
+-IC:/msys64/mingw64/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/detail
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/ext
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtc
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtx
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/simd
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/json/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/kiss/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/pugixml/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/rtAudio/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/tess2/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include/uriparser
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include/utf8
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/videoInput/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/3d
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/app
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/communication
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/events
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/gl
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/graphics
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/math
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/sound
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/types
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/utils
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/video
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src
+-MMD -MP -MF /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxButton.d
+-MT /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxButton.o
+ -o /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxButton.o
+-c /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxButton.cpp
+
+Compiling /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxColorPicker.cpp
+/mingw64/bin/g++
+-c -Os -DNDEBUG -std=gnu++14 -DUNICODE -D_UNICODE -Wall -fexceptions -march=native -mtune=native -DOF_SOUND_PLAYER_OPENAL -DOF_USING_MPG123  -mms-bitfields
+-IC:/msys64/mingw64/include/cairo
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/pixman-1
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/freetype2
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/harfbuzz
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/glib-2.0
+-IC:/msys64/mingw64/lib/glib-2.0/include
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/libpng16
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/AL
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/opus
+-IC:/msys64/mingw64/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/detail
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/ext
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtc
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtx
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/simd
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/json/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/kiss/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/pugixml/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/rtAudio/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/tess2/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include/uriparser
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include/utf8
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/videoInput/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/3d
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/app
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/communication
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/events
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/gl
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/graphics
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/math
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/sound
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/types
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/utils
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/video
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src
+-MMD -MP -MF /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxColorPicker.d
+-MT /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxColorPicker.o
+ -o /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxColorPicker.o
+-c /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxColorPicker.cpp
+
+Compiling /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxGuiGroup.cpp
+/mingw64/bin/g++
+-c -Os -DNDEBUG -std=gnu++14 -DUNICODE -D_UNICODE -Wall -fexceptions -march=native -mtune=native -DOF_SOUND_PLAYER_OPENAL -DOF_USING_MPG123  -mms-bitfields
+-IC:/msys64/mingw64/include/cairo
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/pixman-1
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/freetype2
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/harfbuzz
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/glib-2.0
+-IC:/msys64/mingw64/lib/glib-2.0/include
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/libpng16
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/AL
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/opus
+-IC:/msys64/mingw64/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/detail
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/ext
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtc
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtx
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/simd
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/json/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/kiss/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/pugixml/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/rtAudio/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/tess2/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include/uriparser
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include/utf8
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/videoInput/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/3d
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/app
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/communication
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/events
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/gl
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/graphics
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/math
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/sound
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/types
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/utils
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/video
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src
+-MMD -MP -MF /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxGuiGroup.d
+-MT /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxGuiGroup.o
+ -o /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxGuiGroup.o
+-c /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxGuiGroup.cpp
+
+Compiling /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxInputField.cpp
+/mingw64/bin/g++
+-c -Os -DNDEBUG -std=gnu++14 -DUNICODE -D_UNICODE -Wall -fexceptions -march=native -mtune=native -DOF_SOUND_PLAYER_OPENAL -DOF_USING_MPG123  -mms-bitfields
+-IC:/msys64/mingw64/include/cairo
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/pixman-1
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/freetype2
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/harfbuzz
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/glib-2.0
+-IC:/msys64/mingw64/lib/glib-2.0/include
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/libpng16
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/AL
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/opus
+-IC:/msys64/mingw64/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/detail
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/ext
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtc
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtx
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/simd
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/json/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/kiss/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/pugixml/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/rtAudio/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/tess2/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include/uriparser
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include/utf8
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/videoInput/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/3d
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/app
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/communication
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/events
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/gl
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/graphics
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/math
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/sound
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/types
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/utils
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/video
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src
+-MMD -MP -MF /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxInputField.d
+-MT /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxInputField.o
+ -o /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxInputField.o
+-c /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxInputField.cpp
+
+Compiling /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxLabel.cpp
+/mingw64/bin/g++
+-c -Os -DNDEBUG -std=gnu++14 -DUNICODE -D_UNICODE -Wall -fexceptions -march=native -mtune=native -DOF_SOUND_PLAYER_OPENAL -DOF_USING_MPG123  -mms-bitfields
+-IC:/msys64/mingw64/include/cairo
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/pixman-1
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/freetype2
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/harfbuzz
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/glib-2.0
+-IC:/msys64/mingw64/lib/glib-2.0/include
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/libpng16
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/AL
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/opus
+-IC:/msys64/mingw64/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/detail
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/ext
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtc
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtx
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/simd
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/json/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/kiss/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/pugixml/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/rtAudio/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/tess2/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include/uriparser
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include/utf8
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/videoInput/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/3d
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/app
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/communication
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/events
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/gl
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/graphics
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/math
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/sound
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/types
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/utils
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/video
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src
+-MMD -MP -MF /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxLabel.d
+-MT /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxLabel.o
+ -o /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxLabel.o
+-c /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxLabel.cpp
+
+Compiling /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxPanel.cpp
+/mingw64/bin/g++
+-c -Os -DNDEBUG -std=gnu++14 -DUNICODE -D_UNICODE -Wall -fexceptions -march=native -mtune=native -DOF_SOUND_PLAYER_OPENAL -DOF_USING_MPG123  -mms-bitfields
+-IC:/msys64/mingw64/include/cairo
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/pixman-1
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/freetype2
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/harfbuzz
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/glib-2.0
+-IC:/msys64/mingw64/lib/glib-2.0/include
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/libpng16
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/AL
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/opus
+-IC:/msys64/mingw64/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/detail
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/ext
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtc
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtx
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/simd
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/json/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/kiss/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/pugixml/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/rtAudio/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/tess2/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include/uriparser
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include/utf8
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/videoInput/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/3d
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/app
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/communication
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/events
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/gl
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/graphics
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/math
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/sound
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/types
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/utils
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/video
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src
+-MMD -MP -MF /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxPanel.d
+-MT /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxPanel.o
+ -o /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxPanel.o
+-c /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxPanel.cpp
+
+Compiling /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxSlider.cpp
+/mingw64/bin/g++
+-c -Os -DNDEBUG -std=gnu++14 -DUNICODE -D_UNICODE -Wall -fexceptions -march=native -mtune=native -DOF_SOUND_PLAYER_OPENAL -DOF_USING_MPG123  -mms-bitfields
+-IC:/msys64/mingw64/include/cairo
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/pixman-1
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/freetype2
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/harfbuzz
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/glib-2.0
+-IC:/msys64/mingw64/lib/glib-2.0/include
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/libpng16
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/AL
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/opus
+-IC:/msys64/mingw64/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/detail
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/ext
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtc
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtx
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/simd
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/json/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/kiss/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/pugixml/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/rtAudio/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/tess2/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include/uriparser
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include/utf8
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/videoInput/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/3d
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/app
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/communication
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/events
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/gl
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/graphics
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/math
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/sound
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/types
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/utils
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/video
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src
+-MMD -MP -MF /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxSlider.d
+-MT /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxSlider.o
+ -o /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxSlider.o
+-c /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxSlider.cpp
+
+Compiling /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxSliderGroup.cpp
+/mingw64/bin/g++
+-c -Os -DNDEBUG -std=gnu++14 -DUNICODE -D_UNICODE -Wall -fexceptions -march=native -mtune=native -DOF_SOUND_PLAYER_OPENAL -DOF_USING_MPG123  -mms-bitfields
+-IC:/msys64/mingw64/include/cairo
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/pixman-1
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/freetype2
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/harfbuzz
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/glib-2.0
+-IC:/msys64/mingw64/lib/glib-2.0/include
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/libpng16
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/AL
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/opus
+-IC:/msys64/mingw64/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/detail
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/ext
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtc
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtx
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/simd
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/json/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/kiss/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/pugixml/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/rtAudio/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/tess2/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include/uriparser
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include/utf8
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/videoInput/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/3d
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/app
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/communication
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/events
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/gl
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/graphics
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/math
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/sound
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/types
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/utils
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/video
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src
+-MMD -MP -MF /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxSliderGroup.d
+-MT /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxSliderGroup.o
+ -o /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxSliderGroup.o
+-c /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxSliderGroup.cpp
+
+Compiling /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxToggle.cpp
+/mingw64/bin/g++
+-c -Os -DNDEBUG -std=gnu++14 -DUNICODE -D_UNICODE -Wall -fexceptions -march=native -mtune=native -DOF_SOUND_PLAYER_OPENAL -DOF_USING_MPG123  -mms-bitfields
+-IC:/msys64/mingw64/include/cairo
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/pixman-1
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/freetype2
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/harfbuzz
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/glib-2.0
+-IC:/msys64/mingw64/lib/glib-2.0/include
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/libpng16
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/AL
+-IC:/msys64/mingw64/include
+-IC:/msys64/mingw64/include/opus
+-IC:/msys64/mingw64/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/detail
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/ext
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtc
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/gtx
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/glm/include/glm/simd
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/json/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/kiss/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/pugixml/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/rtAudio/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/tess2/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/include/uriparser
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/utf8/include/utf8
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/videoInput/include
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/3d
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/app
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/communication
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/events
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/gl
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/graphics
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/math
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/sound
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/types
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/utils
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworks/video
+-I/c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src
+-MMD -MP -MF /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxToggle.d
+-MT /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxToggle.o
+ -o /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxToggle.o
+-c /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxToggle.cpp
+
+Linking bin/guiExample.exe for msys2
+/mingw64/bin/g++
+ -o bin/guiExample.exe
+ obj/msys2/Release/src/main.o
+ obj/msys2/Release/src/ofApp.o
+ obj/msys2/Release/icon.res
+ /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxBaseGui.o
+ /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxButton.o
+ /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxColorPicker.o
+ /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxGuiGroup.o
+ /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxInputField.o
+ /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxLabel.o
+ /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxPanel.o
+ /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxSlider.o
+ /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxSliderGroup.o
+ /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/obj/msys2/Release/ofxGui/src/ofxToggle.o
+
+ /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/openFrameworksCompiled/lib/msys2/libopenFrameworks.a
+ -lpthread
+ -mwindows
+ /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/kiss/lib/msys2/libkiss.a
+ /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/pugixml/lib/msys2/pugixml.a
+ /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/rtAudio/lib/msys2/librtaudio.a
+ /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/tess2/lib/msys2/libtess2.a
+ /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/uriparser/lib/msys2/liburiparser.a
+ /c/Users/Fernando/Downloads/of_v0.11.0_msys264_release/libs/videoInput/lib/msys2/libvideoinput.a
+
+ -LC:/msys64/mingw64/lib
+
+ -lcairo
+ -lz
+ -lssl
+ -lcrypto
+ -lglew32
+ -lglfw3
+ -lcurl
+ -lopenal
+ -lsndfile
+ -lmpg123
+ -lksuser
+ -lopengl32
+ -lgdi32
+ -lmsimg32
+ -lglu32
+ -ldsound
+ -lwinmm
+ -lstrmiids
+ -luuid
+ -lole32
+ -loleaut32
+ -lsetupapi
+ -lwsock32
+ -lws2_32
+ -lIphlpapi
+ -lComdlg32
+ -lfreeimage
+ -lboost_filesystem-mt
+ -lboost_system-mt
+ -lfreetype
+ -lcairo
