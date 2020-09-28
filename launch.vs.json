@@ -1,0 +1,17 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "cppdbg", // cppdbg pra depuración, default para solo compilar
+      "project": "CMakeLists.txt",
+      "projectTarget": "Prueba2.exe", //Nombre del objetivo, que aparece al darle play en Visual Studio
+      "name": "Prueba2.exe", //Nombre que aparece visualmente
+      "cwd": "${workspaceRoot}",
+      "program": "${debugInfo.target}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe", // Ruta del depurador
+      "externalConsole": true
+    }
+  ]
+}
