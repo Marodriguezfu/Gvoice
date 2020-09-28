@@ -21,16 +21,16 @@ add_compile_options("-march=native")
 add_compile_options("-mtune=native")
 
 set(SRC_OPENFRAMEWORK_ADDON_GUI
-        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxBaseGui.cpp
-        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxButton.cpp
-        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxColorPicker.cpp
-        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxGuiGroup.cpp
-        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxInputField.cpp
-        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxLabel.cpp
-        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxPanel.cpp
-        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxSlider.cpp
-        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxSliderGroup.cpp
-        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxToggle.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/addons/ofxGui/src/ofxBaseGui.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/addons/ofxGui/src/ofxButton.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/addons/ofxGui/src/ofxColorPicker.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/addons/ofxGui/src/ofxGuiGroup.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/addons/ofxGui/src/ofxInputField.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/addons/ofxGui/src/ofxLabel.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/addons/ofxGui/src/ofxPanel.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/addons/ofxGui/src/ofxSlider.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/addons/ofxGui/src/ofxSliderGroup.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/addons/ofxGui/src/ofxToggle.cpp
         )
 
 add_executable(${EXECUTABLE} main.cpp ofApp.cpp ${SRC_OPENFRAMEWORK_ADDON_GUI})
