@@ -1,13 +1,14 @@
-#include <iostream>
-#include "hola.h"
+#include <ofMain.h>
+#include "ofApp.h"
 
-using namespace std;
+//========================================================================
+int main( ){
 
-int main() {
-    saludo(5);
-    string casa = "LA CASA ESTA SOLA";
-    cout << casa << endl;
-    cout << "HOLA SOY ANGELA" << endl;
+	ofSetupOpenGL(300,300, OF_WINDOW);			// <-------- setup the GL context
 
+	// this kicks off the running of my app
+	// can be OF_WINDOW or OF_FULLSCREEN
+	// pass in width and height too:
+	ofRunApp( new ofApp());
     return 0;
 }
