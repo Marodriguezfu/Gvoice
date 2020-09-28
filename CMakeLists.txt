@@ -20,7 +20,7 @@ add_compile_options("-fexceptions")
 add_compile_options("-march=native")
 add_compile_options("-mtune=native")
 
-set(SRC_ADDONS
+set(SRC_OPENFRAMEWORK_ADDON_GUI
         C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxBaseGui.cpp
         C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxButton.cpp
         C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxColorPicker.cpp
@@ -33,7 +33,7 @@ set(SRC_ADDONS
         C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxToggle.cpp
         )
 
-add_executable(${EXECUTABLE} main.cpp ofApp.cpp ${SRC_ADDONS})
+add_executable(${EXECUTABLE} main.cpp ofApp.cpp ${SRC_OPENFRAMEWORK_ADDON_GUI})
 
 target_compile_options(${EXECUTABLE} PRIVATE "-mwindows")
 
@@ -91,6 +91,7 @@ IF(WIN32)
             ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/libs/openFrameworks/types
             ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/libs/openFrameworks/utils
             ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/libs/openFrameworks/video
+
             ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/addons/ofxGui/src
             )
 ELSE()
