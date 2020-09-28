@@ -12,11 +12,28 @@ add_compile_definitions(UNICODE)
 add_compile_definitions(OF_SOUND_PLAYER_OPENAL)
 add_compile_definitions(OF_USING_MPG123)
 
+add_compile_options("-Os")
 add_compile_options("-MMD")
 add_compile_options("-MP")
 add_compile_options("-mms-bitfields")
+add_compile_options("-fexceptions")
+add_compile_options("-march=native")
+add_compile_options("-mtune=native")
 
-add_executable(${EXECUTABLE} main.cpp ofApp.cpp)
+set(SRC_ADDONS
+        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxBaseGui.cpp
+        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxButton.cpp
+        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxColorPicker.cpp
+        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxGuiGroup.cpp
+        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxInputField.cpp
+        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxLabel.cpp
+        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxPanel.cpp
+        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxSlider.cpp
+        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxSliderGroup.cpp
+        C:/Users/Fernando/Downloads/of_v0.11.0_msys264_release/addons/ofxGui/src/ofxToggle.cpp
+        )
+
+add_executable(${EXECUTABLE} main.cpp ofApp.cpp ${SRC_ADDONS})
 
 target_compile_options(${EXECUTABLE} PRIVATE "-mwindows")
 
@@ -31,7 +48,7 @@ IF(WIN32)
             ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/libs/tess2/lib/msys2
             ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/libs/uriparser/lib/msys2
             ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/libs/videoInput/lib/msys2
-    )
+            )
 
     target_include_directories(${EXECUTABLE} PRIVATE
             ${MSYS_PATH}/mingw64/include/cairo
@@ -74,49 +91,49 @@ IF(WIN32)
             ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/libs/openFrameworks/types
             ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/libs/openFrameworks/utils
             ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/libs/openFrameworks/video
-        )
+            )
 ELSE()
 
 ENDIF()
 
 target_link_libraries(${EXECUTABLE} PRIVATE
-            libopenFrameworks.a
-            libkiss.a
-            pugixml.a
-            librtaudio.a
-            libtess2.a
-            liburiparser.a
-            libvideoinput.a
-            cairo
-            z
-            ssl
-            crypto
-            glew32
-            glfw3
-            curl
-            openal
-            sndfile
-            mpg123
-            ksuser
-            opengl32
-            gdi32
-            msimg32
-            glu32
-            dsound
-            winmm
-            strmiids
-            uuid
-            ole32
-            oleaut32
-            setupapi
-            wsock32
-            ws2_32
-            Iphlpapi
-            Comdlg32
-            freeimage
-            boost_filesystem-mt
-            boost_system-mt
-            freetype
-            cairo
-            pthread
+        libopenFrameworks.a
+        libkiss.a
+        pugixml.a
+        librtaudio.a
+        libtess2.a
+        liburiparser.a
+        libvideoinput.a
+        cairo
+        z
+        ssl
+        crypto
+        glew32
+        glfw3
+        curl
+        openal
+        sndfile
+        mpg123
+        ksuser
+        opengl32
+        gdi32
+        msimg32
+        glu32
+        dsound
+        winmm
+        strmiids
+        uuid
+        ole32
+        oleaut32
+        setupapi
+        wsock32
+        ws2_32
+        Iphlpapi
+        Comdlg32
+        freeimage
+        boost_filesystem-mt
+        boost_system-mt
+        freetype
+        cairo
+        pthread
         )
