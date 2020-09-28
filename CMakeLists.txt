@@ -91,6 +91,7 @@ IF(WIN32)
             ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/libs/openFrameworks/types
             ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/libs/openFrameworks/utils
             ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/libs/openFrameworks/video
+            ${CMAKE_CURRENT_SOURCE_DIR}/lib/windows/openFramework/addons/ofxGui/src
             )
 ELSE()
 
