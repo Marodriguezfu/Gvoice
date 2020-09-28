@@ -8,7 +8,6 @@
           "FLAVOR": "x86_64-w64-mingw32",
           "TOOLSET_VERSION": "10.2.0",
           "INCLUDE": "${env.MINGW64_ROOT}\\include\\c++\\${env.TOOLSET_VERSION};${env.MINGW64_ROOT}\\include\\c++\\${env.TOOLSET_VERSION}\\tr1;${env.MINGW64_ROOT}\\include\\c++\\${env.TOOLSET_VERSION}\\${env.FLAVOR}",
-
           "MINGW_PREFIX": "C:/msys64/mingw64",
           "MINGW_CHOST": "x86_64-w64-mingw32",
           "MINGW_PACKAGE_PREFIX": "mingw-w64-x86_64",
@@ -20,16 +19,13 @@
           "TEMP": "${env.MINGW_PREFIX}/../tmp",
           "TMP": "${env.TEMP}",
           "PATH": "${env.MINGW_PREFIX}/bin;${env.MINGW_PREFIX}/../usr/local/bin;${env.MINGW_PREFIX}/../usr/bin;${env.MINGW_PREFIX}/../bin;${env.PATH}",
-
           "environment": "mingw_64"
         }
       ],
       "name": "Mingw64-Debug",
       "generator": "Ninja",
       "configurationType": "Debug",
-      "inheritEnvironments": [
-        "mingw_64", "msvc_x64_x64"
-      ],
+      "inheritEnvironments": [ "mingw_64", "msvc_x64_x64" ],
       "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
       "installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
       "cmakeCommandArgs": "",
@@ -39,11 +35,58 @@
       "variables": [
         {
           "name": "CMAKE_C_COMPILER",
-          "value": "${env.BIN_ROOT}\\gcc.exe"
+          "value": "${env.BIN_ROOT}\\gcc.exe",
+          "type": "STRING"
         },
         {
           "name": "CMAKE_CXX_COMPILER",
-          "value": "${env.BIN_ROOT}\\g++.exe"
+          "value": "${env.BIN_ROOT}\\g++.exe",
+          "type": "STRING"
+        }
+      ]
+    },
+    {
+      "environments": [
+        {
+          "MINGW32_ROOT": "C:\\msys64\\mingw32",
+          "BIN_ROOT": "${env.MINGW32_ROOT}\\bin",
+          "FLAVOR": "i686-w64-mingw32",
+          "TOOLSET_VERSION": "10.2.0",
+          "INCLUDE": "${env.MINGW32_ROOT}\\include\\c++\\${env.TOOLSET_VERSION};${env.MINGW32_ROOT}\\include\\c++\\${env.TOOLSET_VERSION}\\tr1;${env.MINGW32_ROOT}\\include\\c++\\${env.TOOLSET_VERSION}\\${env.FLAVOR}",
+          "MINGW_PREFIX": "C:/msys64/mingw32",
+          "MINGW_CHOST": "i686-w64-mingw32",
+          "MINGW_PACKAGE_PREFIX": "mingw-w64-i686",
+          "MSYSTEM": "MINGW32",
+          "MSYSTEM_CARCH": "i686",
+          "MSYSTEM_PREFIX": "C:/msys64/mingw32",
+          "MSYSTEM_CHOST": " i686-w64-mingw32",
+          "SHELL": "${env.MINGW_PREFIX}/../usr/bin/bash",
+          "TEMP": "${env.MINGW_PREFIX}/../tmp",
+          "TMP": "${env.TEMP}",
+          "PATH": "${env.MINGW_PREFIX}/bin;${env.MINGW_PREFIX}/../usr/local/bin;${env.MINGW_PREFIX}/../usr/bin;${env.MINGW_PREFIX}/../bin;${env.PATH}",
+          "environment": "mingw32_i686"
+        }
+      ],
+      "name": "MinGW32-i686-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "mingw32_i686", "msvc_x86_x64" ],
+      "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+      "installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "intelliSenseMode": "linux-gcc-x86",
+      "variables": [
+        {
+          "name": "CMAKE_C_COMPILER",
+          "value": "${env.BIN_ROOT}\\gcc.exe",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_CXX_COMPILER",
+          "value": "${env.BIN_ROOT}\\g++.exe",
+          "type": "STRING"
         }
       ]
     }
