@@ -1,128 +1,92 @@
 #include "ofApp.h"
 
 //--------------------------------------------------------------
-void ofApp::setup(){	 
-	
-	int screenW = ofGetScreenWidth();
-	int screenH = ofGetScreenHeight();
-	ofSetWindowPosition(screenW/2-300/2, screenH/2-300/2);
-	
-	// load our typeface
-	vagRounded.load("vag.ttf", 16);
+void ofApp::setup(){
+	ofSetVerticalSync(true);
 
-	bFullscreen	= 0;
-	
-	// lets set the initial window pos
-	// and background color
-	// ofSetVerticalSync(true);
-	ofSetFrameRate(60);
-	
-	ofBackground(50,50,50);	
-	
-	
-	ballPositionX = 150;
-	ballPositionY = 150;
-	ballVelocityX = ofRandom(-5,5);
-	ballVelocityY = ofRandom(-5,5);
+	// we add this listener before setting up so the initial circle resolution is correct
+	circleResolution.addListener(this, &ofApp::circleResolutionChanged);
+	ringButton.addListener(this, &ofApp::ringButtonPressed);
+
+	gui.setup(); // most of the time you don't need a name
+	gui.add(filled.setup("fill", true));
+	gui.add(radius.setup("radius", 140, 10, 300));
+	gui.add(center.setup("center", {ofGetWidth()*.5, ofGetHeight()*.5}, {0, 0}, {ofGetWidth(), ofGetHeight()}));
+	gui.add(color.setup("color", ofColor(100, 100, 140), ofColor(0, 0), ofColor(255, 255)));
+	gui.add(circleResolution.setup("circle res", 5, 3, 90));
+	gui.add(twoCircles.setup("two circles"));
+	gui.add(ringButton.setup("ring"));
+	gui.add(screenSize.setup("screen size", ofToString(ofGetWidth())+"x"+ofToString(ofGetHeight())));
+
+	bHide = false;
+
+	ring.load("ring.wav");
+}
+
+//--------------------------------------------------------------
+void ofApp::exit(){
+	ringButton.removeListener(this, &ofApp::ringButtonPressed);
+}
+
+//--------------------------------------------------------------
+void ofApp::circleResolutionChanged(int &circleResolution){
+	ofSetCircleResolution(circleResolution);
+}
+
+//--------------------------------------------------------------
+void ofApp::ringButtonPressed(){
+	ring.play();
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
-	// update our window title with the framerate and the position of the window
-	// [zach fix] ofSetWindowTitle(ofToString(ofGetFrameRate(), 2)+":fps - pos ("+ofToString((int)windowX)+","+ofToString((int)windowY)+")");
-
-	
-	if(bFullscreen){
-		ofHideCursor();
-	}else{
-		ofShowCursor();
-	}
-	
-	
-	ballPositionX += ballVelocityX;
-	ballPositionY += ballVelocityY;
-	
-	int posx = ofGetWindowPositionX();
-	int posy = ofGetWindowPositionY();
-	
-	if (ballPositionX < 0){
-		ballPositionX = 0;
-		ballVelocityX *= -1;
-		if (!bFullscreen){
-			ofSetWindowPosition(posx-10, posy);
-		}
-	} else if (ballPositionX > ofGetWidth()){
-		ballPositionX = ofGetWidth();
-		ballVelocityX *= -1;
-		if (!bFullscreen){
-			ofSetWindowPosition(posx+10, posy);
-		}
-	}
-	
-	if (ballPositionY < 0){
-		ballPositionY = 0;
-		ballVelocityY *= -1;
-		if (!bFullscreen){
-			ofSetWindowPosition(posx, posy-10);
-		}
-	} else if (ballPositionY > ofGetHeight()){
-		ballPositionY = ofGetHeight();
-		ballVelocityY *= -1;
-		if (!bFullscreen){
-			ofSetWindowPosition(posx, posy+10);
-		}
-	}
-	
+	ofSetCircleResolution(circleResolution);
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-	ofSetupScreen();
-	
-	ofSetHexColor(0x999999);
-	
-	// lets show our window pos in pixels
-	// macs actually start the Y pos from 40
-	vagRounded.drawString("window pos ("+ofToString(ofGetWindowPositionX())+", "+ofToString( ofGetWindowPositionY())+")", 10, 25);
+    ofBackgroundGradient(ofColor::white, ofColor::gray);
+    
+	if(filled){
+		ofFill();
+	}else{
+		ofNoFill();
+	}
 
-	if(!bFullscreen){
-		vagRounded.drawString("press f to enter fullscreen", -140 + ofGetWidth()/2, ofGetHeight()/2);	
-		vagRounded.drawString("window is normal", -100 + ofGetWidth()/2, ofGetHeight() - 10);
-	} else {
-		vagRounded.drawString("press f to exit fullscreen", -150 + ofGetWidth()/2, ofGetHeight()/2); 
-		vagRounded.drawString("window is fullscreen", -140 + ofGetWidth()/2, ofGetHeight() - 10); 
+	ofSetColor(color);
+	if(twoCircles){
+		ofDrawCircle(center->x-radius*.5, center->y, radius );
+		ofDrawCircle(center->x+radius*.5, center->y, radius );
+	}else{
+		ofDrawCircle(center, radius );
 	}
 	
-
-	ofSetHexColor(0xFFFFFF);
-	ofDrawCircle(ballPositionX, ballPositionY, 15);
+	// auto draw?
+	// should the gui control hiding?
+	if(!bHide){
+		gui.draw();
+	}
 }
 
-
 //--------------------------------------------------------------
-void ofApp::keyPressed(int key){ 
-
-	if(key == 'f'){
-	
-		bFullscreen = !bFullscreen;
-		
-		if(!bFullscreen){
-			ofSetWindowShape(300,300);
-			ofSetFullscreen(false);
-			// figure out how to put the window in the center:
-			int screenW = ofGetScreenWidth();
-			int screenH = ofGetScreenHeight();
-			ofSetWindowPosition(screenW/2-300/2, screenH/2-300/2);
-		} else if(bFullscreen == 1){
-			ofSetFullscreen(true);
-		}
+void ofApp::keyPressed(int key){
+	if(key == 'h'){
+		bHide = !bHide;
+	}
+	else if(key == 's'){
+		gui.saveToFile("settings.xml");
+	}
+	else if(key == 'l'){
+		gui.loadFromFile("settings.xml");
+	}
+	else if(key == ' '){
+		color = ofColor(255);
 	}
 }
 
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
-
+	
 }
 
 //--------------------------------------------------------------
@@ -142,7 +106,7 @@ void ofApp::mousePressed(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
-
+	
 }
 
 //--------------------------------------------------------------
@@ -157,15 +121,15 @@ void ofApp::mouseExited(int x, int y){
 
 //--------------------------------------------------------------
 void ofApp::windowResized(int w, int h){
-
+    screenSize = ofToString(w) + "x" + ofToString(h);
 }
 
 //--------------------------------------------------------------
 void ofApp::gotMessage(ofMessage msg){
-
+	
 }
 
 //--------------------------------------------------------------
 void ofApp::dragEvent(ofDragInfo dragInfo){ 
-
+	
 }
