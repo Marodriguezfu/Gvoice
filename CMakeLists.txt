@@ -139,3 +139,8 @@ target_link_libraries(${EXECUTABLE} PRIVATE
         cairo
         pthread
         )
+
+add_custom_command(TARGET ${EXECUTABLE} POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_directory
+        "${PROJECT_SOURCE_DIR}/data"
+        $<TARGET_FILE_DIR:${EXECUTABLE}>/data)
