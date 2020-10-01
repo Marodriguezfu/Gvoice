@@ -2,7 +2,18 @@
 
 ## Compilación de biblioteca
 ### Windows
-
+1. Descargar Open Framework
+[Descargar Open Framework](https://openframeworks.cc/versions/v0.11.0/of_v0.11.0_msys264_release.zip)
+2. Descomprimir carpeta
+3. Abrir MSYS2 MinGW - 64 bits
+4. Abrir la ubicación de OpenFramework e ir a la carpeta
+``` bash
+cd <OpenFrameword>/scripts/msys2
+```
+5. Ejecutar el comando de instalación de dependencias, cada vez que pida confirmación aceptar
+``` bash 
+./install_dependencies.sh
+```
 ### MacOS
 
 ### Linux
