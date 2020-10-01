@@ -2,15 +2,41 @@
 
 ## Compilación de biblioteca
 ### Windows
-1. Descargar Open Framework
+1. Descargar MSYS2 de msys2.org
+2. Abrir MSYS 2 MinGW - 64 Bits. IMPORTANTE (Debe ser la versión de 64 Bits)
+3. Actualizar dependencias
+``` bash
+pacman -Syu
+pacman -Su
+```
+4. Para buscar paquetes usar
+``` bash
+pacman -Ss NombreDelPaquete
+```   
+5. Para instalar paquetes
+``` bash
+pacman -S NombreDelPaquete
+```   
+6. Instalar gcc y make
+``` bash
+pacman -S mingw64/mingw-w64-x86_64-gcc
+pacman -S mingw64/mingw-w64-x86_64-make
+```
+7. Instalar CMake y en la instalación agregar al PATH para todos los usuarios
+8. Agregar al PATH de windows, la ruta de mingw64 de MSYS2. Por defecto es
+``` bash
+C:\msys64\mingw64\bin
+```
+9. Cerrar todas las terminales
+10. Descargar Open Framework
 [Descargar Open Framework](https://openframeworks.cc/versions/v0.11.0/of_v0.11.0_msys264_release.zip)
-2. Descomprimir carpeta
-3. Abrir MSYS2 MinGW - 64 bits
-4. Abrir la ubicación de OpenFramework e ir a la carpeta
+11. Descomprimir carpeta
+12. Abrir MSYS2 MinGW - 64 bits
+13. Abrir la ubicación de OpenFramework e ir a la carpeta
 ``` bash
 cd <OpenFrameword>/scripts/msys2
 ```
-5. Ejecutar el comando de instalación de dependencias, cada vez que pida confirmación aceptar
+14. Ejecutar el comando de instalación de dependencias, cada vez que pida confirmación aceptar
 ``` bash 
 ./install_dependencies.sh
 ```
