@@ -21,9 +21,10 @@ cd <OpenFrameword>/scripts/msys2
 
 ## Configuración ambiente y compilación
 ### Linea de comandos
-1. Crear carpeta donde construir
+1. Crear carpeta donde construir y entrar a la carpeta
 ``` bash
-cmake build
+mkdir build
+cd build
 ```
 2. Generar proyecto y especificar la ruta donde se encuentra el archivo `CMakeLists` 
 ``` bash
