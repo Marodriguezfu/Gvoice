@@ -35,12 +35,12 @@
       "variables": [
         {
           "name": "CMAKE_C_COMPILER",
-          "value": "${env.BIN_ROOT}\\gcc.exe",
+          "value": "C:/msys64/mingw64/bin/gcc.exe",
           "type": "STRING"
         },
         {
           "name": "CMAKE_CXX_COMPILER",
-          "value": "${env.BIN_ROOT}\\g++.exe",
+          "value": "C:/msys64/mingw64/bin/g++.exe",
           "type": "STRING"
         }
       ]
@@ -80,12 +80,12 @@
       "variables": [
         {
           "name": "CMAKE_C_COMPILER",
-          "value": "${env.BIN_ROOT}\\gcc.exe",
+          "value": "C:/msys64/mingw64/bin/gcc.exe",
           "type": "STRING"
         },
         {
           "name": "CMAKE_CXX_COMPILER",
-          "value": "${env.BIN_ROOT}\\g++.exe",
+          "value": "C:/msys64/mingw64/bin/g++.exe",
           "type": "STRING"
         }
       ]
