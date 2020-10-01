@@ -136,7 +136,7 @@ IF(WIN32)
             cairo
             pthread
             )
-ELSE()
+ELSEIF(APPLE)
     add_compile_definitions(__MACOSX_CORE__)
 
     add_compile_options("-Os")
@@ -264,6 +264,149 @@ ELSE()
             COMMAND ${CMAKE_COMMAND} -E copy
             "${PROJECT_SOURCE_DIR}/lib/macos/openFramework/libs/fmodex/lib/osx/libfmodex.dylib"
             $<TARGET_FILE_DIR:${EXECUTABLE}>)
+ELSE()
+    add_compile_definitions(GCC_HAS_REGEX)
+    add_compile_definitions(OF_USING_GTK)
+    add_compile_definitions(_REENTRANT)
+
+    add_compile_options("-O3")
+    add_compile_options("-mtune=native")
+    add_compile_options("-MMD")
+    add_compile_options("-MP")
+
+    set(SRC_OPENFRAMEWORK_ADDON_GUI
+            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxBaseGui.cpp
+	    /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxButton.cpp
+            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxColorPicker.cpp
+            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxGuiGroup.cpp
+            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxInputField.cpp
+            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxLabel.cpp
+            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxPanel.cpp
+            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxSlider.cpp
+            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxSliderGroup.cpp
+            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxToggle.cpp
+            )
+
+    add_executable(${EXECUTABLE} main.cpp ofApp.cpp ${SRC_OPENFRAMEWORK_ADDON_GUI})
+
+    target_link_directories(${EXECUTABLE} PRIVATE
+            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/fmodex/lib/linux64/ 
+            #${CMAKE_CURRENT_SOURCE_DIR}/lib/macos/openFramework/libs/fmodex/lib/osx
+            )
+
+    target_include_directories(${EXECUTABLE} PRIVATE
+        /usr/include/gstreamer-1.0 
+	/usr/include/orc-0.4 
+	/usr/include/gstreamer-1.0 
+	/usr/include/AL 
+	/usr/include/x86_64-linux-gnu 
+	/usr/include/rtaudio 
+	/usr/include/alsa 
+	/usr/include/gtk-3.0 
+	/usr/include/at-spi2-atk/2.0 
+	/usr/include/at-spi-2.0 
+	/usr/include/dbus-1.0 
+	/usr/lib/x86_64-linux-gnu/dbus-1.0/include 
+	/usr/include/gtk-3.0 
+	/usr/include/gio-unix-2.0 
+	/usr/include/cairo 
+	/usr/include/libdrm 
+	/usr/include/pango-1.0 
+	/usr/include/harfbuzz 
+	/usr/include/pango-1.0 
+	/usr/include/fribidi 
+	/usr/include/atk-1.0 
+	/usr/include/cairo 
+	/usr/include/pixman-1 
+	/usr/include/freetype2 
+	/usr/include/libpng16 
+	/usr/include/gdk-pixbuf-2.0 
+	/usr/include/libmount 
+	/usr/include/blkid 
+	/usr/include/uuid 
+	/usr/include/glib-2.0 
+	/usr/lib/x86_64-linux-gnu/glib-2.0/include 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/fmodex/include 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/glm/include 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/glm/include/glm 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/glm/include/glm/gtx
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/glm/include/glm/simd 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/glm/include/glm/detail 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/glm/include/glm/gtc 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/glm/include/glm/ext 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/json/include 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/kiss/include 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/pugixml/include 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/tess2/include 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/utf8/include 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/utf8/include/utf8 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/utils 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/gl 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/math 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/sound 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/types 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/events 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/graphics 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/3d 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/app 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/video 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/communication 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src 
+            )
+
+    target_link_libraries(${EXECUTABLE} PRIVATE
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworksCompiled/lib/linux64/libopenFrameworks.a   
+	-lfmodex 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/kiss/lib/linux64/libkiss.a 
+	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/tess2/lib/linux64/libtess2.a   
+	-lz 
+	-lgstapp-1.0 
+	-lgstvideo-1.0 
+	-lgstbase-1.0 
+	-lgstreamer-1.0 
+	-ludev 
+	-lfontconfig 
+	-lfreetype 
+	-lsndfile 
+	-lopenal 
+	-lcurl 
+	-lglfw 
+	-lrtaudio 
+	-lpulse-simple 
+	-lpulse 
+	-lasound 
+	-lGLEW 
+	-lGLU 
+	-lGL 
+	-lgtk-3 
+	-lgdk-3 
+	-lpangocairo-1.0 
+	-lpango-1.0 
+	-latk-1.0 
+	-lcairo-gobject 
+	-lcairo 
+	-lgdk_pixbuf-2.0 
+	-lgio-2.0 
+	-lgobject-2.0 
+	-lglib-2.0 
+	-lglut 
+	-lX11 
+	-lXrandr 
+	-lXxf86vm 
+	-lXi 
+	-lXcursor 
+	-ldl 
+	-lpthread 
+	-lfreeimage 
+	-lboost_filesystem 
+	-lboost_system 
+	-lpugixml 
+	-luriparser 
+	-lXinerama
+            )
+#-Wl,-rpath=./libs:./bin/libs -Wl,--as-needed -Wl,--gc-sections -fuse-ld=gold 
+
 ENDIF()
 
 add_custom_command(TARGET ${EXECUTABLE} POST_BUILD
