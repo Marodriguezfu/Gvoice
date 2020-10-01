@@ -275,91 +275,93 @@ ELSE()
     add_compile_options("-MP")
 
     set(SRC_OPENFRAMEWORK_ADDON_GUI
-            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxBaseGui.cpp
-	    /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxButton.cpp
-            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxColorPicker.cpp
-            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxGuiGroup.cpp
-            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxInputField.cpp
-            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxLabel.cpp
-            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxPanel.cpp
-            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxSlider.cpp
-            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxSliderGroup.cpp
-            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src/ofxToggle.cpp
+            ${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/addons/ofxGui/src/ofxBaseGui.cpp
+	    ${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/addons/ofxGui/src/ofxButton.cpp
+            ${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/addons/ofxGui/src/ofxColorPicker.cpp
+            ${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/addons/ofxGui/src/ofxGuiGroup.cpp
+            ${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/addons/ofxGui/src/ofxInputField.cpp
+            ${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/addons/ofxGui/src/ofxLabel.cpp
+            ${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/addons/ofxGui/src/ofxPanel.cpp
+            ${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/addons/ofxGui/src/ofxSlider.cpp
+            ${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/addons/ofxGui/src/ofxSliderGroup.cpp
+            ${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/addons/ofxGui/src/ofxToggle.cpp
             )
 
     add_executable(${EXECUTABLE} main.cpp ofApp.cpp ${SRC_OPENFRAMEWORK_ADDON_GUI})
 
     target_link_directories(${EXECUTABLE} PRIVATE
-            /home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/fmodex/lib/linux64/ 
-            #${CMAKE_CURRENT_SOURCE_DIR}/lib/macos/openFramework/libs/fmodex/lib/osx
+            	${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/fmodex/lib/linux64
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/openFrameworksCompiled/lib/linux64
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/kiss/lib/linux64
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/tess2/lib/linux64
             )
 
     target_include_directories(${EXECUTABLE} PRIVATE
-        /usr/include/gstreamer-1.0 
-	/usr/include/orc-0.4 
-	/usr/include/gstreamer-1.0 
-	/usr/include/AL 
-	/usr/include/x86_64-linux-gnu 
-	/usr/include/rtaudio 
-	/usr/include/alsa 
-	/usr/include/gtk-3.0 
-	/usr/include/at-spi2-atk/2.0 
-	/usr/include/at-spi-2.0 
-	/usr/include/dbus-1.0 
-	/usr/lib/x86_64-linux-gnu/dbus-1.0/include 
-	/usr/include/gtk-3.0 
-	/usr/include/gio-unix-2.0 
-	/usr/include/cairo 
-	/usr/include/libdrm 
-	/usr/include/pango-1.0 
-	/usr/include/harfbuzz 
-	/usr/include/pango-1.0 
-	/usr/include/fribidi 
-	/usr/include/atk-1.0 
-	/usr/include/cairo 
-	/usr/include/pixman-1 
-	/usr/include/freetype2 
-	/usr/include/libpng16 
-	/usr/include/gdk-pixbuf-2.0 
-	/usr/include/libmount 
-	/usr/include/blkid 
-	/usr/include/uuid 
-	/usr/include/glib-2.0 
-	/usr/lib/x86_64-linux-gnu/glib-2.0/include 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/fmodex/include 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/glm/include 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/glm/include/glm 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/glm/include/glm/gtx
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/glm/include/glm/simd 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/glm/include/glm/detail 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/glm/include/glm/gtc 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/glm/include/glm/ext 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/json/include 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/kiss/include 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/pugixml/include 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/tess2/include 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/utf8/include 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/utf8/include/utf8 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/utils 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/gl 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/math 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/sound 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/types 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/events 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/graphics 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/3d 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/app 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/video 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworks/communication 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/addons/ofxGui/src 
+		/usr/include/gstreamer-1.0 
+		/usr/include/orc-0.4 
+		/usr/include/gstreamer-1.0 
+		/usr/include/AL 
+		/usr/include/x86_64-linux-gnu 
+		/usr/include/rtaudio 
+		/usr/include/alsa 
+		/usr/include/gtk-3.0 
+		/usr/include/at-spi2-atk/2.0 
+		/usr/include/at-spi-2.0 
+		/usr/include/dbus-1.0 
+		/usr/lib/x86_64-linux-gnu/dbus-1.0/include 
+		/usr/include/gtk-3.0 
+		/usr/include/gio-unix-2.0 
+		/usr/include/cairo 
+		/usr/include/libdrm 
+		/usr/include/pango-1.0 
+		/usr/include/harfbuzz 
+		/usr/include/pango-1.0 
+		/usr/include/fribidi 
+		/usr/include/atk-1.0 
+		/usr/include/cairo 
+		/usr/include/pixman-1 
+		/usr/include/freetype2 
+		/usr/include/libpng16 
+		/usr/include/gdk-pixbuf-2.0 
+		/usr/include/libmount 
+		/usr/include/blkid 
+		/usr/include/uuid 
+		/usr/include/glib-2.0 
+		/usr/lib/x86_64-linux-gnu/glib-2.0/include 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/fmodex/include 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/glm/include 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/glm/include/glm 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/glm/include/glm/gtx
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/glm/include/glm/simd 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/glm/include/glm/detail 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/glm/include/glm/gtc 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/glm/include/glm/ext 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/json/include 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/kiss/include 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/pugixml/include 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/tess2/include 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/utf8/include 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/utf8/include/utf8 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/openFrameworks 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/openFrameworks/utils 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/openFrameworks/gl 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/openFrameworks/math 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/openFrameworks/sound 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/openFrameworks/types 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/openFrameworks/events 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/openFrameworks/graphics 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/openFrameworks/3d 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/openFrameworks/app 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/openFrameworks/video 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/libs/openFrameworks/communication 
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/linux/openFramework/addons/ofxGui/src
             )
 
     target_link_libraries(${EXECUTABLE} PRIVATE
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/openFrameworksCompiled/lib/linux64/libopenFrameworks.a   
+	libopenFrameworks.a   
 	-lfmodex 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/kiss/lib/linux64/libkiss.a 
-	/home/diegodfrf/Descargas/of_v0.11.0_linux64gcc6_release/libs/tess2/lib/linux64/libtess2.a   
+	libkiss.a 
+	libtess2.a   
 	-lz 
 	-lgstapp-1.0 
 	-lgstvideo-1.0 
@@ -405,7 +407,6 @@ ELSE()
 	-luriparser 
 	-lXinerama
             )
-#-Wl,-rpath=./libs:./bin/libs -Wl,--as-needed -Wl,--gc-sections -fuse-ld=gold 
 
 ENDIF()
 
